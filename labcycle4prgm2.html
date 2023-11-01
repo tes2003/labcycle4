@@ -1,0 +1,32 @@
+<html>
+<head>
+<style>
+h2 {
+font-size : 30px;
+color : green;
+font-weight : bold;
+text-decoration : underline;
+}
+</style>
+<script>
+function addition() {
+var x = parseInt(document.getElementById("first").value);
+var y = parseInt(document.getElementById("second").value);
+var Sum=x+y; 
+document.getElementById("result").innerHTML=Sum;
+}
+</script>
+</head>
+<body>
+<center>
+<h2>Addition of two numbers</h2>
+<br>
+<br>
+<label>enter the value of first number:<input type="text" id="first"></label>
+<br>
+<br>
+<label>enter the value of second number:<input type="text" id="second"></label>
+<button onclick="addition()">Sum</button>
+<p id="result"></p>
+</body>
+</html>
