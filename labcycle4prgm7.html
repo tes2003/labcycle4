@@ -1,0 +1,38 @@
+<!---TESMOL SHAJI--->
+<!---RollNo:56--->
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+body{
+  text-align:center;
+  color: red;
+}
+p{
+   text-align:center;
+  color: blue;
+  }
+</style>
+</head>
+<body>
+<h1>JavaScript</h1>
+<button onclick="myFunction()">Set color</button>
+<div id="colorInput">
+<p>JavaScript is a scripting language that enables you to create dynamically updating content, control multimedia, animate images, and pretty much everything else.</p>
+<script>
+function myFunction(){
+let color= prompt("Enter your color");
+let text;
+if (color == null || color == "") {
+  text = "User cancelled the prompt.";
+} else {
+  text = "OK"
+} 
+function changeColor() {
+var colorInput = document.getElementById('colorInput').value;
+var colorfulTextArea = document.getElementById('colorfulTextArea');
+colorfulTextArea.style.color = colorInput;
+        }
+</script>
+</body>
+</html>
