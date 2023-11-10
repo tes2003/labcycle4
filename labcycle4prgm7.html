@@ -1,38 +1,37 @@
 <!---TESMOL SHAJI--->
 <!---RollNo:56--->
 <!DOCTYPE html>
+<!---TESMOL SHAJI--->
+<!---RollNo:56--->
 <html>
 <head>
-<style> 
-body{
-  text-align:center;
-  color: red;
+<style>
+h1
+{ 
+ color:red;
 }
-p{
-   text-align:center;
-  color: blue;
-  }
+
 </style>
 </head>
+
 <body>
-<h1>JavaScript</h1>
-<button onclick="myFunction()">Set color</button>
-<div id="colorInput">
-<p>JavaScript is a scripting language that enables you to create dynamically updating content, control multimedia, animate images, and pretty much everything else.</p>
-<script>
-function myFunction(){
-let color= prompt("Enter your color");
-let text;
-if (color == null || color == "") {
-  text = "User cancelled the prompt.";
-} else {
-  text = "OK"
-} 
-function changeColor() {
-var colorInput = document.getElementById('colorInput').value;
-var colorfulTextArea = document.getElementById('colorfulTextArea');
-colorfulTextArea.style.color = colorInput;
-        }
-</script>
+<center>
+<h1>javascript</h1>
+ <p id="colorInput"> JavaScript is a dynamic programming language that's used for web development, in web applications, for game development, and lots more. It allows you to implement dynamic features on web pages that cannot be done with only HTML and CSS.</p>
+  <br>
+  <br>
+  
+  <button onclick="changeMe()">Change Color</button>
+</center>
+  <script>
+  function changeMe(){
+  const textToChange = document.getElementById("textToChange");
+  const inputColor=prompt("Enter the color for Text");
+if (inputColor){
+        document.body.style.backgroundColor = inputColor;
+textToChange.style.color="white";
+    }}
+  </script>
 </body>
 </html>
+
